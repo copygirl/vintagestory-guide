@@ -47,14 +47,14 @@ footer > div {
 a { color: lightskyblue !important; }
 a.missing { color: lightpink !important; }
 
-img.right-left, img.right-float, img.shadow {
+img.float-left, img.float-right, img.shadow {
   box-shadow: 5px 5px 2px #333;
 }
-img.right-left {
+img.float-left {
   float: left;
   margin: .2em .8em .4em 0;
 }
-img.right-float {
+img.float-right {
   float: right;
   margin: .2em 0 .4em .8em;
 }
