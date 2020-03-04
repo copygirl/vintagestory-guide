@@ -21,6 +21,7 @@
         <li>
           <a href="#First_Day">Your First Day</a>
           <ul>
+            <li><a href="#Character">Character</a></li>
             <li><a href="#Handbook">Handbook</a></li>
             <li><a href="#Resources">Resources</a></li>
             <li><a href="#Knapping">Knapping</a></li>
@@ -97,18 +98,17 @@
             <tr><td><span class="key">Esc</span></td><td>Open/close escape menu<span class="more">1</span></td></tr>
             <tr><td><span class="key">H</span></td><td>Open/close <a href="#Handbook">handbook</a></td></tr>
             <tr><td><span class="key">E</span></td><td>Open/close inventory<span class="more">2</span></td></tr>
-            <tr><td><span class="key">C</span></td><td>Open/close character inventory<span class="more">3</span></td></tr>
-            <tr><td><span class="key">M</span></td><td>Open/close map dialog<span class="more">4</span></td></tr>
+            <tr><td><span class="key">C</span></td><td>Open/close <a href="#Character">character inventory</a><span class="more">3</span></td></tr>
+            <tr><td><span class="key">M</span></td><td>Open/close map dialog<span class="more">3</span></td></tr>
             <tr><td><span class="key">F6</span></td><td>Show/hide minimap</td></tr>
             <tr><td><span class="key">F4</span></td><td>Show/hide all HUD elements</td></tr>
-            <tr><td><span class="key">F12</span></td><td>Take and save a screenshot<span class="more">5</span></td></tr>
+            <tr><td><span class="key">F12</span></td><td>Take and save a screenshot<span class="more">4</span></td></tr>
           </table>
           <footer>
             <div><span class="more">1)</span> Pauses game in singleplayer. Also a quick way to close all currently open dialogs.</div>
             <div><span class="more">2)</span> Features a 3x3 crafting grid. No inventory space until you <a href="#Inventory">expand it</a>.</div>
-            <div><span class="more">3)</span> Allows (un)equipping clothes &amp; armor. Also shows <a href="#Cooking" class="missing">nutrients</a> and various stats.</div>
-            <div><span class="more">4)</span> Work-in-progress. Press <span class="mouse right"><span></span></span> to create / edit waypoints.</div>
-            <div><span class="more">5)</span> Will be stored in a <span class="code">Vintagestory</span> folder in your user's Pictures folder.</div>
+            <div><span class="more">3)</span> Work-in-progress. Press <span class="mouse right"><span></span></span> to create / edit waypoints.</div>
+            <div><span class="more">4)</span> Will be stored in a <span class="code">Vintagestory</span> folder in your user's Pictures folder.</div>
           </footer>
           
           <details class="warn">
@@ -132,16 +132,33 @@
         <h2 id="First_Day">Your First Day</h2>
         <div>
           Here is everything you might want to know for your first day(s) in Vintage Story.
+          <p>
+          When you start out in a new world, you're greeted by the outfit selection dialog, and another one that greets you, telling you about the <a href="Handbook">handbook</a> and a starter guide on the <a href="https://wiki.vintagestory.at/">official wiki</a> - which you won't need because you have this one.
         </div>
+        
+        <section>
+          <h3 id="Character">Character</h3>
+          <div>
+            <img src="images/character_outfit.png" class="float-left" style="height: 12.5em;">
+            <img src="images/character_stats.png" class="float-right" style="height: 12.5em;">
+            In a newly created world, you will be able to pick your clothes from a very limited selection of tattered rags. If you accidentally close this dialog without clicking "Confirm Selection", it will reappear next time you join. And, if you're wondering: Yes, you can find more clothing while playing.
+            <p>
+            When you open your character dialog ingame (<span class="key">C</span>), which allows you to change your clothing and equipped <a href="#Armor" class="missing">armor</a>, an additional "Stats" dialog will appear next to it.
+            <p>
+            The nutrition bars will fill up as you eat foods in those categories. <a href="#Cooking" class="missing">Cooked meals</a> are an especially good way to fill multiple at once. This is important because you can <b>raise your maximum health</b> from 15 health points (by default) to a total of 25 when all 4 categories are full.
+            <p>
+            Health and satiety displayed here are also visible above the hotbar as the red and green bars to the left and right, respectively. If you're curious what the cog in the center does, read up on <i>Temporal Stability</i> mechanic in the handbook. The additional stats are affected by the <a href="#Armor" class="missing"></a>armor</a> you wear, but notably, carrying an item in your offhand raises your <i>hunger rate</i> by 25%.
+          </div>
+        </section>
         
         <section>
           <h3 id="Handbook">Handbook</h3>
           <div>
             Before you jump right into the game, you should definitely be aware of the ingame <b>handbook</b>, which can be opened by pressing <span class="key">H</span>. You can also hover over an item in your hotbar, inventory or any container and press <span class="key">H</span> to directly jump to its page, or <span class="code">Sneak</span>+<span class="key">H</span> to do the same for blocks in the world.
             <p>
-            The handbook allows you to see information about certain mechanics (such as <a href="#Smithing" class="missing">smithing</a>), how to create an item and what it can be used for. Navigate it using the search, or click on icons and links to move around.
+            The handbook allows you to read information about certain mechanics (such as <a href="#Smithing" class="missing">smithing</a>), how to create an item and what it can be used for. Navigate it using the search, or click on icons and links to move around.
             <p>
-            For more in-depth information, there is also the <a href="https://wiki.vintagestory.at/">Vintage Story Wiki</a>.
+            In addition to it, you can also look at the previously mentioned <a href="https://wiki.vintagestory.at/">Vintage Story Wiki</a> for more in-depth information about certain topics.
           </div>
         </section>
         
