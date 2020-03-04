@@ -107,7 +107,7 @@
           <footer>
             <div><span class="more">1)</span> Pauses game in singleplayer. Also a quick way to close all currently open dialogs.</div>
             <div><span class="more">2)</span> Features a 3x3 crafting grid. No inventory space until you <a href="#Inventory">expand it</a>.</div>
-            <div><span class="more">3)</span> Work-in-progress. Press <span class="mouse right"><span></span></span> to create / edit waypoints.</div>
+            <div><span class="more">3)</span> A bit of a work-in-progress. Press <span class="mouse right"><span></span></span> to create / edit waypoints.</div>
             <div><span class="more">4)</span> Will be stored in a <span class="code">Vintagestory</span> folder in your user's Pictures folder.</div>
           </footer>
           
@@ -151,6 +151,19 @@
           </div>
         </section>
         
+        <details class="info">
+          <summary>Death, respawning and setting your spawn</summary>
+          <div>
+            Remember the location you first start in a fresh world, because it's where you will be reappearing whenever you die. That is, until you get a rare item drop called <i>temporal gear</i>, which you use by holding <span class="mouse right"><span></span></span> until it disappears, setting your new spawn point.
+            <p>
+            Beware that, with the default world settings, you will drop your items on the ground, which you have some amount of time to retrieve. And, at this moment, there are no automatic death waypoints.<span class="more">1)</span>
+            
+            <footer>
+              <div><span class="more">1)</span> At least, not without <a href="https://www.vintagestory.at/forums/topic/805-vshud/">a certain mod</a>.</div>
+            </footer>
+          </div>
+        </details>
+        
         <section>
           <h3 id="Handbook">Handbook</h3>
           <div>
@@ -170,12 +183,6 @@
             Note that due to a bug this method doesn't work properly if you're playing on a multiplayer server at this time, and waypoints will only appear after you've reconnected. However, there's an alternative: Simply type <span class="code">/waypoint add [color] [name]</span> into the chat (<span class="key">T</span>) to create a waypoint where you stand. Editing using the map works fine, so you can easily change the icon.
           </div>
         </details>
-        <details class="info">
-          <summary>Respawning and setting your spawn</summary>
-          <div>
-            The first place to create a waypoint at would probably be at the location you first start in a fresh world, because you will be reappearing here whenever you die. That is, until you get a rare item drop called <i>temporal gear</i>, which you use by holding <span class="mouse right"><span></span></span> until it disappears, setting your new spawn point.
-          </div>
-        </details>
         <details class="warn">
           <summary>Beware of the wolves! 🐺</summary>
           <div>
@@ -188,7 +195,7 @@
         <section>
           <h3 id="Resources">Resources</h3>
           <div>
-            These are some important resources you either want to look out for early on, or at the very least know about.
+            The following list shows some important resources you either want to look out for early on, or at the very least should know about, so you can waypoint them for later.
           </div>
           
           <table class="resources">
@@ -196,7 +203,7 @@
               <td>Sticks</td>
               <td><img src="images/resource_stick.png"></td>
               <td>
-                Sometimes found laying about, you can also get them from breaking <i>leaves</i>, particularly branchy ones. Early on, they're used to create tools, a <i>firestarter</i>, <i>torches</i>, <i>ladders</i>, and may be used as fuel for the <i>firepit</i>.
+                Sometimes found laying about, you can also get them from breaking <i>leaves</i>, particularly branchy ones. They're used to create tools, a <i>firestarter</i>, <i>torches</i>, <i>ladders</i>, and may be used as fuel for the <i>firepit</i>.
               </td>
             </tr>
             <tr>
@@ -210,7 +217,7 @@
               <td>Flint</td>
               <td><img src="images/resource_flint.png"></td>
               <td>
-                A bit more rare than stones, but found anywhere in the world. Slightly better material to make tool heads from, and unlike stones you can also craft <i>arrow heads</i>.
+                A bit more rare than stones, but found anywhere in the world. Slightly better material to make tool heads from, and unlike stones also <i>arrow heads</i>.
               </td>
             </tr>
             <tr>
@@ -224,7 +231,7 @@
               <td>Copper</td>
               <td><img src="images/resource_copper.png"></td>
               <td>
-                Will yield 1 to 3 copper nuggets. Consider holding off on collecting them, due to your initially <a href="#Inventory">limited inventory space</a>. Either way, be sure to <b>create a waypoint</b> where you find them, because there is a surface deposit of copper hiding below!
+                Will yield 1 to 3 copper nuggets.<span class="more">1</span> Consider holding off on collecting them, due to your initially <a href="#Inventory">limited inventory space</a>. Either way, be sure to <b>create a waypoint</b> where you find them, because there is a surface deposit of copper hiding below!
               </td>
             </tr>
             <tr>
@@ -252,12 +259,13 @@
               <td>Terra Preta</td>
               <td><img src="images/resource_terra_preta.png"></td>
               <td>
-                This very rare and dark soil is the best block to till into farmland to <a href="#Farming" class="missing">grow your crops</a> on the quickest, so keep a lookout for it. Just be aware that, once tilled, it can't be picked up anymore.<span class="more">1</span>
+                This very rare and dark soil is the best block to till into farmland to <a href="#Farming" class="missing">grow your crops</a> on the quickest, so keep a lookout for it. Just be aware that, once tilled, it can't be picked up anymore.<span class="more">2</span>
               </td>
             </tr>
           </table>
           <footer>
-            <div><span class="more">1)</span> Unless you use <a href="https://www.vintagestory.at/forums/topic/1209-farmland-drops-soil/">a certain mod</a>.</div>
+            <div><span class="more">1)</span> To get started into the <a href="#Copper_Age" class="missing">copper age</a>, you will need 40 nuggets in total.</div>
+            <div><span class="more">2)</span> Unless you use <a href="https://www.vintagestory.at/forums/topic/1209-farmland-drops-soil/">a certain mod</a>.</div>
           </footer>
         </section>
         
@@ -270,9 +278,9 @@
             A dialog will appear, letting you chose what you want to make. You may want to start with a pair of <i>knives</i>, and eventually you'll also need an <i>axe</i>. You might want to consider a <i>spear</i> or two to hunt or defend yourself, but <a href="#Inventory">inventory space</a> is precious right now.
             <p>
             <img src="images/knapping_progress.png" class="float-left" style="width: 173px;">
-            A grid of voxels will appear on the ground, some of them highlighted with an orange outline. Knap away parts of the material until no highlighted voxel remains, either by holding down <span class="mouse left"><span></span></span>, or clicking repeatedly at your own pace. Just be sure to hold another item of the same material. And don't worry about chipping off the wrong voxels, because you can't.
+            Next, a flat grid of voxels will appear on the ground, some of them highlighted with an orange outline. While holding another item of the same material, knap away parts of the material until no highlighted voxel remains, either by holding down <span class="mouse left"><span></span></span>, or clicking repeatedly at your own pace. Note that you can <b>break multiple voxels away</b> by disconnecting them from the main work piece.
             <p>
-            Consider sitting down using <span class="key">G</span> to get closer to the crafting surface. Once you're done and received your tool head - in this case, 2 knife blades - slap it into the 3x3 crafting grid in your inventory (<span class="key">E</span>) with a <i>stick</i> below to receive your finished tool.
+            Consider sitting down using <span class="key">G</span> to get closer to the crafting surface. Once you're done and received your tool head - in this case, 2 <i>knife blades</i> - slap it into the 3x3 crafting grid in your inventory (<span class="key">E</span>) with a <i>stick</i> below to receive your finished tool.
           </div>
           
           <details class="info">
@@ -367,7 +375,7 @@
           <details class="info">
             <summary>On wild crop growth</summary>
             <div>
-              Crops that are not fully grown do not always drop a seed for you to replant. Therefore you might think it's common sense to leave these plants alone until they slowly grow up on their own. However, know that unlike crops that have been planted on <a href="#Farming" class="missing">farmland</a>, wild crop growth only occurs in chunks that are "loaded", so only around where players are currenlty active, that they can see.
+              Crops that are not fully grown do not always drop a seed for you to replant. Therefore you might think it's common sense to leave these plants alone until they slowly grow up on their own. However, know that unlike crops that have been planted on <a href="#Farming" class="missing">farmland</a>, wild crop growth only occurs in the areas that are loaded around players.
               <p>
               Therefore, you might just want to pick up crops when you go on long exploration trips, far from anywhere you might be staying for a while.
             </div>
@@ -389,7 +397,8 @@
               <li>Speaking of <i>cobblestone</i>, with some luck you can find and spruce up a ruin.</li>
             </ul>
             
-            Once you've made yourself reasonably comfortable, it's time to make a <b>fire!</b> First place a piece of <i>dry grass</i> on the ground using <span class="code">Shift</span>+<span class="mouse right"><span></span></span> and then follow up with 4 <i>firewood</i> - which you can get by placing an <i>axe</i> above some <i>logs</i> in the 3x3 crafting grid. This create a basic <i>firepit</i>, which you now have to start using a <i>firestarter</i>. Its temperature will start to rise, and will continue burning as long as you provide it with fuel.
+            <img src="images/shelter_firepit.png" class="float-right" style="width: 173px;">
+            Once you've made yourself reasonably comfortable, it's time to make a <b>fire!</b> First place a piece of <i>dry grass</i> on the ground using <span class="code">Shift</span>+<span class="mouse right"><span></span></span> and then follow up with 4 <i>firewood</i> - which you can get by placing an <i>axe</i> above some <i>logs</i> in the 3x3 crafting grid. This creates a basic <i>firepit</i>, which you now have to start using a <i>firestarter</i> - again hold <span class="code">Shift</span>+<span class="mouse right"><span></span></span> until it succeeds. When the <i>firepit</i> starts burning its temperature will start to rise, and will continue burning as long as you provide it with fuel.
             <p>
             Next, use some of those excess <i>sticks</i> you've gathered and turn them into <i>torches</i> by just placing them in the <i>firepit</i>. <i>Torches</i> can start fires even better than the <i>firestarter</i>, so you can throw the latter away. In your inventory they last forever, but keep in mind that they go out in rain if not covered by a block. Placed down, they burn out after 3 days.
             <p>
