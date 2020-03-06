@@ -28,7 +28,6 @@ main {
 
 section { margin: 1em .5em; }
 div, ul { margin: .8em 0; padding: 0; }
-p { margin: .8em 0 0 0; }
 
 li { margin: .2em 0 .2em 1.2em; }
 ul ul { margin: 0; }
@@ -44,10 +43,27 @@ footer > div {
   padding-left: 1.2em;
 }
 
-a { color: lightskyblue !important; }
-a.missing { color: lightpink !important; }
+a, a:active, a:link, a:visited {
+  color: lightskyblue;
+  text-decoration-color: rgba(135, 206, 250, 0.5);
+}
+a.missing {
+  color: lightpink;
+  text-decoration-color: rgba(255, 182, 193, 0.5);
+}
+a[href*="http://"], a[href*="https://"] {
+  color: dodgerblue;
+  text-decoration-color: currentColor;
+}
+a[href*="http://"]:after, a[href*="https://"]:after {
+  content: "🔗";
+  display: inline-block;
+  margin-left: .2em;
+  vertical-align: middle;
+  font-size: 70%;
+}
 
-img.float-left, img.float-right, img.shadow {
+img.float-left, img.float-right, .shadow {
   box-shadow: 5px 5px 2px #333;
 }
 img.float-left {
@@ -61,7 +77,6 @@ img.float-right {
 
 table { margin: .5em 0; }
 table td { padding: .1em .2em; }
-table p { margin: .4em 0 0 0; }
 table img { vertical-align: middle; }
 
 
@@ -79,7 +94,7 @@ details summary {
 details summary { font-weight: bold; }
 details summary::before { font-weight: normal; }
 details[open] summary { border-bottom: inherit; }
-details div { padding: 0 1em; font-size: 90%; }
+details p { padding: 0 1em; font-size: 90%; }
 
 details.warn { border-color: #864; background-color: #221A11; }
 details.warn summary { background-color: #321; }
@@ -126,6 +141,79 @@ footer .more {
   left: 0;
   font-size: 75%;
 }
+
+
+/* CRAFTING */
+
+a.show-on-active {
+  position: relative;
+  color: yellowgreen;
+  text-decoration: underline rgba(153, 205, 50, 0.5);
+  cursor: pointer;
+}
+
+.show-on-active .crafting {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 50%; top: 100%;
+}
+.show-on-active:hover .crafting,
+.show-on-active:active .crafting,
+.show-on-active:focus .crafting { display: block; }
+.show-on-active:active .crafting,
+.show-on-active:focus .crafting { z-index: 3; }
+
+.crafting {
+  position: relative;
+  margin: 0;
+  border: 5px solid #2d2321;
+  border-image: url(images/border.png) 5 repeat;
+  outline: 2px solid gray;
+  background: #403529;
+  box-shadow: inset 0 0 16px #543, 0 0 4px 2px #222;
+}
+
+.crafting.grid {
+  width: 156px; height: 220px;
+  background: no-repeat 4px url(images/crafting_grid.png), #403529;
+}
+.show-on-active .crafting.grid {
+  margin-left: -78px;
+  outline-color: rgba(153, 205, 50, 0.75);
+}
+.crafting.grid > * {
+  position: absolute;
+  width: 40px; height: 40px;
+  margin: 0;
+}
+.crafting.grid img {
+  display: block;
+  height: 36px;
+  margin: 2px auto;
+}
+.crafting.grid .amount {
+  position: absolute;
+  right: -1px; bottom: -1px;
+  color: #e2e2e2;
+  font-weight: bold;
+  font-size: 120%;
+  line-height: 75%;
+  text-shadow: -1px 0 0 black,
+               0 -1px 0 black,
+               1px 0 0 black,
+               0 1px 0 black;
+}
+.crafting.grid .input-1-1 { left:   8px; top:   8px; }
+.crafting.grid .input-2-1 { left:  58px; top:   8px; }
+.crafting.grid .input-3-1 { left: 108px; top:   8px; }
+.crafting.grid .input-1-2 { left:   8px; top:  58px; }
+.crafting.grid .input-2-2 { left:  58px; top:  58px; }
+.crafting.grid .input-3-2 { left: 108px; top:  58px; }
+.crafting.grid .input-1-3 { left:   8px; top: 108px; }
+.crafting.grid .input-2-3 { left:  58px; top: 108px; }
+.crafting.grid .input-3-3 { left: 108px; top: 108px; }
+.crafting.grid .output    { left:  58px; top: 172px; }
 
 
 /* CONTROLS */
