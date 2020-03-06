@@ -80,35 +80,6 @@ table td { padding: .1em .2em; }
 table img { vertical-align: middle; }
 
 
-details {
-  overflow: hidden;
-  margin: .2em;
-  border: 1px solid gray;
-  border-radius: 8px;
-}
-details summary {
-  padding: .4em;
-  outline: none;
-  user-select: none;
-}
-details summary { font-weight: bold; }
-details summary::before { font-weight: normal; }
-details[open] summary { border-bottom: inherit; }
-details p { padding: 0 1em; font-size: 90%; }
-
-details.warn { border-color: #864; background-color: #221A11; }
-details.warn summary { background-color: #321; }
-details.warn summary::before { content: "Caution: "; }
-
-details.info { border-color: #468; background-color: #111A22; }
-details.info summary { background-color: #123; }
-details.info summary::before { content: "Information: "; }
-
-details.suggest { border-color: #484; background-color: #121; }
-details.suggest summary { background-color: #131; }
-details.suggest summary::before { content: "Suggestion: "; }
-
-
 .dotted { text-decoration: underline dotted; }
 .nowrap { white-space: nowrap; }
 
@@ -141,6 +112,37 @@ footer .more {
   left: 0;
   font-size: 75%;
 }
+
+
+/* DETAILS */
+
+details {
+  margin: .2em;
+  border: 1px solid gray;
+  border-radius: 8px;
+}
+details summary {
+  margin: -1px;
+  padding: .4em;
+  border: 1px solid gray;
+  border-radius: 8px;
+  font-weight: bold;
+  user-select: none;
+}
+details summary::before { font-weight: normal; }
+details > div { padding: 0 1em; font-size: 90%; }
+
+details.warn { border-color: #864; background-color: #221A11; }
+details.warn summary { border-color: #864; background-color: #321; }
+details.warn summary::before { content: "Caution: "; }
+
+details.info { border-color: #468; background-color: #111A22; }
+details.info summary { border-color: #468; background-color: #123; }
+details.info summary::before { content: "Information: "; }
+
+details.suggest { border-color: #484; background-color: #121; }
+details.suggest summary { border-color: #484; background-color: #131; }
+details.suggest summary::before { content: "Suggestion: "; }
 
 
 /* CRAFTING */
@@ -198,7 +200,7 @@ a.show-on-active {
   color: #e2e2e2;
   font-weight: bold;
   font-size: 120%;
-  line-height: 75%;
+  line-height: 85%;
   text-shadow: -1px 0 0 black,
                0 -1px 0 black,
                1px 0 0 black,
