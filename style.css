@@ -181,7 +181,7 @@ a.show-on-active {
   background: no-repeat 4px url(images/crafting_grid.png), #403529;
 }
 .show-on-active .crafting.grid {
-  margin-left: -78px;
+  margin-left: -83px;
   outline-color: rgba(153, 205, 50, 0.75);
 }
 .crafting.grid > * {
