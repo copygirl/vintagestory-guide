@@ -3,6 +3,7 @@ html {
   color: #e2e2e2;
   font: 16px Calibri, sans-serif;
   text-align: justify;
+  line-height: 22px;
 }
 
 h1 { margin: .8em 0; text-align: center; }
@@ -29,13 +30,14 @@ main {
 section { margin: 1em .5em; }
 div, ul { margin: .8em 0; padding: 0; }
 
-li { margin: .2em 0 .2em 1.2em; }
+li { margin-left: 1.2em; }
 ul ul { margin: 0; }
 ul ul li { margin-left: .8em; }
 
 footer {
   margin: 1em .4em;
   font-size: 90%;
+  line-height: 20px;
 }
 footer > div {
   position: relative;
@@ -64,16 +66,11 @@ a[href*="http://"]:after, a[href*="https://"]:after {
 }
 
 img.float-left, img.float-right, .shadow {
-  box-shadow: 5px 5px 2px #333;
+  border: 1px solid #666;
+  box-shadow: 4px 4px 2px #333;
 }
-img.float-left {
-  float: left;
-  margin: .2em .8em .4em 0;
-}
-img.float-right {
-  float: right;
-  margin: .2em 0 .4em .8em;
-}
+img.float-left { float: left; margin-right: .6em; }
+img.float-right { float: right; margin-left: .6em; }
 
 table { margin: .5em 0; }
 table td { padding: .1em .2em; }
@@ -104,12 +101,14 @@ table img { vertical-align: middle; }
 
 .more {
   vertical-align: top;
+  line-height: 1.2em;
   font-size: 60%;
   font-weight: bold;
 }
 footer .more {
   position: absolute;
   left: 0;
+  line-height: 20px;
   font-size: 75%;
 }
 
@@ -120,6 +119,7 @@ details {
   margin: .2em;
   border: 1px solid gray;
   border-radius: 8px;
+  line-height: 20px;
 }
 details summary {
   margin: -1px;
@@ -168,16 +168,42 @@ a.show-on-active {
 
 .crafting {
   position: relative;
-  margin: 0;
+  margin: 0; padding: 4px;
   border: 5px solid #2d2321;
   border-image: url(images/border.png) 5 repeat;
   outline: 2px solid gray;
   background: #403529;
   box-shadow: inset 0 0 16px #543, 0 0 4px 2px #222;
+  color: #e2e2e2;
+}
+.crafting header {
+  margin: -3px 0 2px 0;
+  color: #e0cfbb;
+  text-align: center;
+  text-decoration: underline solid 1px #e0cfbb80;
+  font-weight: bold;
+  font-size: 90%;
+}
+.crafting img {
+  display: block;
+  height: 36px;
+  margin: 2px auto;
+}
+.crafting .amount {
+  position: absolute;
+  right: -2px; bottom: -1px;
+  font-weight: bold;
+  font-size: 120%;
+  line-height: 1em;
+  text-shadow: -1px 0 0 black,
+               0 -1px 0 black,
+               1px 0 0 black,
+               0 1px 0 black;
 }
 
+
 .crafting.grid {
-  width: 156px; height: 220px;
+  width: 148px; height: 212px;
   background: no-repeat 4px url(images/crafting_grid.png), #403529;
 }
 .show-on-active .crafting.grid {
@@ -188,23 +214,6 @@ a.show-on-active {
   position: absolute;
   width: 40px; height: 40px;
   margin: 0;
-}
-.crafting.grid img {
-  display: block;
-  height: 36px;
-  margin: 2px auto;
-}
-.crafting.grid .amount {
-  position: absolute;
-  right: -1px; bottom: -1px;
-  color: #e2e2e2;
-  font-weight: bold;
-  font-size: 120%;
-  line-height: 85%;
-  text-shadow: -1px 0 0 black,
-               0 -1px 0 black,
-               1px 0 0 black,
-               0 1px 0 black;
 }
 .crafting.grid .input-1-1 { left:   8px; top:   8px; }
 .crafting.grid .input-2-1 { left:  58px; top:   8px; }
@@ -218,6 +227,27 @@ a.show-on-active {
 .crafting.grid .output    { left:  58px; top: 172px; }
 
 
+.crafting.clay { width: 148px; }
+.show-on-active .crafting.clay {
+  margin-left: -83px;
+  outline-color: rgba(153, 205, 50, 0.75);
+}
+.crafting.clay > div {
+  position: relative;
+  height: 48px;
+  margin: 0; padding: 0;
+  background: no-repeat url(images/crafting_transform.png);
+}
+.crafting.clay > div + div { margin-top: 2px; }
+.crafting.clay > div > * {
+  position: absolute;
+  width: 40px; height: 40px;
+  margin: 0; padding: 0;
+}
+.crafting.clay .input  { left:   4px; top: 4px; }
+.crafting.clay .output { left: 104px; top: 4px; }
+
+
 /* CONTROLS */
 
 table.controls tr td:first-child {
@@ -229,6 +259,7 @@ table.controls tr td:first-child {
   margin: -2px 1px;
   padding: 2px 5px;
   vertical-align: middle;
+  line-height: 1.2em;
   
   border: 1px solid darkgray;
   border-radius: 4px;
@@ -277,4 +308,7 @@ table.resources tr td:first-child {
 }
 table.resources tr td:nth-child(3) {
   font-size: 90%;
+  line-height: 19px;
 }
+table td > div:first-child { margin-top: 0; }
+table td > div:last-child { margin-bottom: 0; }
