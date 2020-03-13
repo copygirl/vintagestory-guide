@@ -69,12 +69,18 @@ img.float-left, img.float-right, .shadow {
   border: 1px solid #666;
   box-shadow: 4px 4px 2px #333;
 }
-img.float-left { float: left; margin-right: .6em; }
-img.float-right { float: right; margin-left: .6em; }
+.float-left { float: left; margin: 0 .6em 0 0; }
+.float-right { float: right; margin: 0 0 0 .6em; }
 
-table { margin: .5em 0; }
-table td { padding: .1em .2em; }
+table {
+  margin: .5em 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table td { padding: 2px 4px; }
 table img { vertical-align: middle; }
+table td > div:first-child { margin-top: 0; }
+table td > div:last-child { margin-bottom: 0; }
 
 
 .dotted { text-decoration: underline dotted; }
@@ -104,6 +110,7 @@ table img { vertical-align: middle; }
   line-height: 1.2em;
   font-size: 60%;
   font-weight: bold;
+  font-style: normal !important;
 }
 footer .more {
   position: absolute;
@@ -302,13 +309,61 @@ table.controls tr td:first-child {
 
 /* RESOURCES */
 
-table.resources tr td:first-child {
+table.resources td:first-child {
   text-align: center;
   font-weight: bold;
 }
-table.resources tr td:nth-child(3) {
+table.resources td:nth-child(3) {
   font-size: 90%;
   line-height: 19px;
 }
-table td > div:first-child { margin-top: 0; }
-table td > div:last-child { margin-bottom: 0; }
+
+
+/* FARMING */
+
+table.bordered { text-align: center; }
+table.bordered thead { font-size: 80%; }
+table.bordered tbody { border: 1px solid gray; }
+table.bordered thead td { padding: 0 6px; }
+table.bordered tbody td { padding: 2px 6px; }
+
+table.bordered.float-right + table.bordered.float-right { margin-top: 4px; clear: right; }
+
+
+table.soil-types tbody td:first-child { padding-right: 0; }
+table.soil-types tbody td:nth-child(2) { padding-left: 2px; text-align: left; font-style: italic; }
+
+
+table.growth-speed thead td:first-child { padding: 0 2px; }
+table.growth-speed tbody td { font-size: 90%; padding: 0 6px; }
+table.growth-speed tbody td:nth-child(2) { text-align: right; }
+
+
+table.fertilizers tbody td:first-child { padding-right: 0; }
+table.fertilizers tbody td:nth-child(2) { padding-left: 2px; text-align: left; font-style: italic; }
+
+table.fertilizers tbody td:nth-child(3),
+table.fertilizers tbody td:nth-child(4),
+table.fertilizers tbody td:nth-child(5) { text-align: right; }
+
+
+table.crop-types tbody td:nth-child(3),
+table.crop-types tbody td:nth-child(5) { border-left: 1px solid gray; }
+
+table.crop-types tbody td:first-child { padding-right: 0; }
+table.crop-types tbody td:nth-child(2) { padding-left: 2px; text-align: left; font-style: italic; }
+table.crop-types tbody td:nth-child(3) { text-align: right; }
+table.crop-types tbody td:nth-child(6) { font-weight: bold; }
+
+table.crop-types .nutrient-n td:nth-child(5),
+table.crop-types .nutrient-n td:nth-child(6) { background-color: #FF000018; }
+table.crop-types .nutrient-p td:nth-child(5),
+table.crop-types .nutrient-p td:nth-child(6) { background-color: #00FF0018; }
+table.crop-types .nutrient-k td:nth-child(5),
+table.crop-types .nutrient-k td:nth-child(6) { background-color: #2020FF30; }
+
+/*
+GRAIN   background-color: #FFE02020;
+VEGGIE  background-color: #40FF4020;
+PROTEIN background-color: #FF80C020;
+*/
