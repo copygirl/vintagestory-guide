@@ -34,6 +34,7 @@
           <a href="#Housekeeping">Housekeeping</a>
           <ul>
             <li><a href="#Clay_Forming">Clay Forming</a></li>
+            <li><a href="#Charcoal_Pit">Charcoal Pit</a></li>
             <li>
               <a href="#Farming">Farming</a>
               <ul>
@@ -782,8 +783,27 @@
         </section>
         
         <section>
-          <h3 id="Farming">Farming &amp; Husbandry</h3>
+          <h3 id="Charcoal_Pit">Charcoal Pit</h3>
+          <div>
+            An important resource going into the <a href="#Copper_Age" class="missing nowrap"><img src="images/icons/ingot_copper.png" class="icon">copper age</a> will be <i class="nowrap"><img src="images/icons/charcoal.png" class="icon">charcoal</i>. It is one of the few fuels that burns hot enough to melt down <i class="nowrap"><img src="images/icons/nugget_copper.png" class="icon">copper nuggets</i> in a <i class="nowrap"><img src="images/icons/crucible.png" class="icon">crucible</i>, so you can pour it into <i class="nowrap"><img src="images/icons/mold_pickaxe.png" class="icon">molds</i>. This takes a lot of
+            <a tabindex="0" class="show-on-active"><img src="images/icons/firewood.png" class="icon">firewood<div class="crafting grid">
+              <div class="input-2-1"><img src="images/icons/axe_iron.png"></div>
+              <div class="input-2-2"><img src="images/icons/log_oak.png"></div>
+              <div class="output"><img src="images/icons/firewood.png"><span class="amount">4</span></div>
+            </div></a> and some time. I recommend to do this sooner rather than later, so you can get right into smelting that <i>copper</i> when you have enough of it.
+          </div>
+          <div>
+            <img src="images/housekeeping/charcoal_pit.png" class="float-left" style="height: 7.25em;">
+            To turn <i>firewood</i> into <i class="nowrap"><img src="images/icons/charcoal.png" class="icon">charcoal</i>, you need to create a structure called a <i>charcoal pit</i>. This can be as small as a single block or as large as 13x13x13, surrounded by solid, non-flammable blocks such as <i class="nowrap"><img src="images/icons/soil_medium.png" class="icon">soil</i>, filled entirely with <i class="nowrap"><img src="images/icons/firewood.png" class="icon">firewood</i> piles.
+          </div>
+          <div>
+            To begin the charring process, a <a href="#Shelter_Fire" class="nowrap"><img src="images/icons/firepit.png" class="icon">firepit</a> needs to be placed on top of one of the <i>firewood</i> piles, lit with a <i class="nowrap"><img src="images/icons/torch.png" class="icon">torch</i>, and then covered up. If you hear a burning sound, get in there and save as much wood as you can! However, if done correctly, you will see smoke particles being emitted from the entire structure, and it'll be done in 18 in-game hours for you to <i class="nowrap"><img src="images/icons/shovel_iron.png" class="icon">dig out</i>. Each of the piles of 32 <i class="nowrap"><img src="images/icons/firewood.png" class="icon">firewood</i> will turn into 6 <i class="nowrap"><img src="images/icons/charcoal.png" class="icon">charcoal</i> on average.
+          </div>
+        </section>
         
+        <section>
+          <h3 id="Farming">Farming &amp; Husbandry</h3>
+          
           <section>
             <h4 id="Farming:_Bushes">Planting Bushes</h4>
             <div>
@@ -794,7 +814,7 @@
               They take about 4½ days to flower, another 4½ to ripen, and then you have about 8½ days to harvest them before they start over again. Bushes are currently not affected by the climate or <i class="nowrap"><img src="images/icons/soil_medium.png" class="icon">soil</i> type. Be aware that friendly neighborhood <i class="nowrap"><img src="images/icons/creature_raccoon.png" class="icon">raccoons</i> will happily harvest berries from ripe bushes for you... and eat them.
             </div>
           </section>
-        
+          
           <section>
             <h4 id="Farming:_Crops">Farming Crops</h4>
             
@@ -812,7 +832,6 @@
                 <tr><td><img src="images/icons/soil_terra_preta.png" class="icon"></td><td>Terra Preta<span class="more">2</span></td><td>80</td></tr>
               </tbody>
             </table>
-            
             <table class="bordered growth-speed float-right">
               <thead>
                 <tr>
@@ -829,7 +848,6 @@
                 <tr><td>≤&numsp;5</td><td>10%</td></tr>
               </tbody>
             </table>
-            
             <table class="bordered fertilizers float-right">
               <thead>
                 <tr>
@@ -854,7 +872,6 @@
                 </tr>
               </tbody>
             </table>
-            
             <table class="bordered crop-types float-right">
               <thead>
                 <td colspan="2">Crop</td>
@@ -923,27 +940,21 @@
             <div>
               Different types of <i class="nowrap"><img src="images/icons/soil_medium.png" class="icon">soil</i> can be tilled using a <i class="nowrap"><img src="images/icons/hoe_iron.png" class="icon">hoe</i>. Higher quality <i>soil</i>, results in more fertile <i class="nowrap"><img src="images/icons/farmland.png" class="icon">farmland</i>, which also determines the natural maximum amount of nutrients. For example, <i class="nowrap"><img src="images/icons/soil_terra_preta.png" class="icon">Terra Preta</i> will till into a <i>farmland</i> block with 80 nutrients for each nutrient type.
             </div>
-            
             <div>
               Each <i>crop</i> requires wet <i>farmland</i> and one of 3 nutrients (N, P or K) to grow. <i class="nowrap"><img src="images/icons/water.png" class="icon">Water</i> can hydrate up to 3 blocks away from it.<span class="more">3</span> The <i>crop's</i> growth speed depends on how many nutrients of its required type are available in the ground. For example, when the nutrient levels are at N=65, P=45, K=15, <i class="nowrap"><img src="images/icons/vegetable_turnip.png" class="icon">turnips</i> will grow at 100% speed, <i class="nowrap"><img src="images/icons/vegetable_onion.png" class="icon">onions</i> at 90% and <i class="nowrap"><img src="images/icons/vegetable_carrot.png" class="icon">carrots</i> at 30%. 
             </div>
-            
             <div>
               Thus, you need to do <b>crop rotation</b>: When you harvest a crop, plant one that requires a different nutrient (ideally the highest), or leave the <i>farmland</i> bare. The block/entity info HUD (<span class="key">B</span>) shows you the current nutrient levels.
             </div>
-            
             <div>
               <i class="nowrap"><img src="images/icons/farmland.png" class="icon">Farmland</i> slowly regains its nutrients, as long as a fully grown crop isn't currently residing on it. Another way to increase nutrients, is to use <i>fertilizers</i>, which will slowly release nutrients into a single <i>farmland</i> block over time, up to a maximum of 100.
             </div>
-            
             <div>
               Another function of bare <i class="nowrap"><img src="images/icons/farmland.png" class="icon">farmland</i> is that it grows <i>tall grass</i> and, quite a bit more rarely, <i class="nowrap"><img src="images/icons/horsetail.png" class="icon">horsetail</i> as well.
             </div>
-            
             <div>
               You will have to build trenches, walls or <i class="nowrap"><img src="images/icons/fence.png" class="icon">fences</i> around your crops, or else <i class="nowrap"><img src="images/icons/creature_hare.png" class="icon">hares</i> will snack on them. Thankfully, they will drop the <i class="nowrap"><img src="images/icons/seeds_turnip.png" class="icon">seeds</i> for you to recover, as long as you don't let them despawn.
             </div>
-            
             <footer>
               <div>
                 <span class="more">1)</span> Made by composting 64 <i class="nowrap"><img src="images/icons/rot.png" class="icon">rot</i> inside a
