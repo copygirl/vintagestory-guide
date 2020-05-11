@@ -72,6 +72,7 @@ img.float-left, img.float-right, .shadow {
 .float-left { float: left; margin: 0 .6em 0 0; }
 .float-right { float: right; margin: 0 0 0 .6em; }
 
+
 table {
   margin: .5em 0;
   border-collapse: collapse;
@@ -81,6 +82,14 @@ table td { padding: 2px 4px; }
 table img { vertical-align: middle; }
 table td > div:first-child { margin-top: 0; }
 table td > div:last-child { margin-bottom: 0; }
+
+table.bordered { text-align: center; }
+table.bordered thead { font-size: 80%; }
+table.bordered tbody { border: 1px solid gray; }
+table.bordered thead td { padding: 0 6px; }
+table.bordered tbody td { padding: 2px 6px; }
+
+table.bordered.float-right + table.bordered.float-right { margin-top: 4px; clear: right; }
 
 
 .dotted { text-decoration: underline dotted; }
@@ -319,16 +328,20 @@ table.resources td:nth-child(3) {
 }
 
 
+/* CLAY FORMING */
+
+table.clay-forming-cost tbody td { text-align: right; }
+table.clay-forming-cost tbody td:first-child { padding-right: 0; text-align: center; }
+table.clay-forming-cost tbody td:nth-child(2) { padding-left: 2px; text-align: left; font-style: italic; }
+table.clay-forming-cost tbody td:nth-child(4) { font-size: 90%; }
+
+table.clay-forming-cost tbody td:nth-child(2),
+table.clay-forming-cost tbody td:nth-child(3) { border-right: 1px solid gray; }
+
+table.clay-forming-cost tbody td:not(:first-child) .icon { height: 0.7em; margin: 0; vertical-align: 0; }
+
+
 /* FARMING */
-
-table.bordered { text-align: center; }
-table.bordered thead { font-size: 80%; }
-table.bordered tbody { border: 1px solid gray; }
-table.bordered thead td { padding: 0 6px; }
-table.bordered tbody td { padding: 2px 6px; }
-
-table.bordered.float-right + table.bordered.float-right { margin-top: 4px; clear: right; }
-
 
 table.soil-types tbody td:first-child { padding-right: 0; }
 table.soil-types tbody td:nth-child(2) { padding-left: 2px; text-align: left; font-style: italic; }
