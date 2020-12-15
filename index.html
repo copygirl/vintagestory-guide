@@ -153,7 +153,7 @@
           <footer>
             <div><span class="more">1)</span> Pauses game in singleplayer. Also a quick way to close all currently open dialogs.</div>
             <div><span class="more">2)</span> Features a 3x3 crafting grid. No inventory space until you <a href="#Inventory">expand it</a>.</div>
-            <div><span class="more">3)</span> A bit of a work-in-progress. Press <span class="mouse right"><span></span></span> to create / edit waypoints.</div>
+            <div><span class="more">3)</span> Press <span class="mouse right"><span></span></span> to create / edit waypoints. You can also do this on the minimap.</div>
             <div><span class="more">4)</span> Will be stored in a <span class="code">Vintagestory</span> folder in your user's Pictures folder.</div>
           </footer>
           
@@ -208,7 +208,7 @@
             Remember the location you first start in a fresh world, because it's where you will be reappearing whenever you die. That is, until you get a rare item drop called <i class="nowrap"><img src="images/icons/temporal_gear.png" class="icon">temporal gear</i>, which you use by holding <span class="mouse right"><span></span></span> until it disappears, setting your new spawn point.
           </div>
           <div>
-            Beware that, with the default world settings, you will drop your items on the ground, which you have some amount of time to retrieve. And, at this moment, there are no automatic death waypoints.<span class="more">1</span>
+            Beware that, with the default world settings, you will drop your items on the ground, which you have only some amount of time to retrieve before they disappear. There are no automatic death waypoints.<span class="more">1</span> However, you can <span class="mouse right"><span></span></span> the minimap to create a waypoint on your death screen.
             
             <footer>
               <div><span class="more">1)</span> At least, not without the <a href="https://www.vintagestory.at/forums/topic/805-vshud/">VSHUD</a> mod.</div>
@@ -396,11 +396,11 @@
           </div>
           <div>
             <img src="images/first_day/knapping_select_recipe.png" class="float-right" style="height: 7em;">
-            A dialog will appear, letting you chose what you want to make. You may want to start with a pair of <i class="nowrap"><img src="images/icons/knife_flint.png" class="icon">knives</i>, and eventually you'll also need an <i class="nowrap"><img src="images/icons/axe_flint.png" class="icon">axe</i>. You might want to consider a <i class="nowrap"><img src="images/icons/spear_flint.png" class="icon">spear</i> or two to hunt or defend yourself, but <a href="#Inventory">inventory space</a> is precious right now.
+            A dialog will show up, letting you chose what you want to make. You may want to start with a pair of <i class="nowrap"><img src="images/icons/knife_flint.png" class="icon">knives</i>, and eventually you'll also need an <i class="nowrap"><img src="images/icons/axe_flint.png" class="icon">axe</i>. You might want to consider a <i class="nowrap"><img src="images/icons/spear_flint.png" class="icon">spear</i> or two to hunt or defend yourself, but <a href="#Inventory">inventory space</a> is precious right now.
           </div>
           <div>
             <img src="images/first_day/knapping_progress.png" class="float-left" style="height: 6.75em;">
-            Next, a flat grid of voxels will appear on the ground, some of them highlighted with an <span style="color: #da4">orange</span> outline. While holding another item of the same material, knap away voxels either by holding down <span class="mouse left"><span></span></span> or clicking at your own pace, until no highlighted voxel remains. You can <b>break away multiple voxels</b> by disconnecting them from the main work piece.
+            Next, a flat grid of voxels will appear on the ground, some highlighted with an <span style="color: #da4">orange</span> outline. While holding another item of the same (or any knappable) material, knap away voxels either by holding down <span class="mouse left"><span></span></span> or clicking at your own pace, until no highlighted voxel remains. You can <b>break away voxels</b> by disconnecting them from the main work piece.
           </div>
           <div>
             Consider sitting down using <span class="key">G</span> to get closer to the crafting surface. Once you're done and received your tool head (here, 2 <i class="nowrap"><img src="images/icons/knifeblade_flint.png" class="icon">knife blades</i>) slap it into the 3x3 crafting grid in your inventory <span class="nowrap">(<span class="key">E</span>)</span> with a <i class="nowrap"><img src="images/icons/stick.png" class="icon">stick</i> below to receive your finished tool.
@@ -986,7 +986,7 @@
             </table>
             
             <div>
-              Different types of <i class="nowrap"><img src="images/icons/soil_medium.png" class="icon">soil</i> can be tilled using a <i class="nowrap"><img src="images/icons/hoe_iron.png" class="icon">hoe</i>. Higher quality <i>soil</i>, results in more fertile <i class="nowrap"><img src="images/icons/farmland.png" class="icon">farmland</i>, which also determines the natural maximum amount of nutrients. For example, <i class="nowrap"><img src="images/icons/soil_terra_preta.png" class="icon">Terra Preta</i> will till into a <i>farmland</i> block with 80 nutrients for each nutrient type.
+              Different types of <i class="nowrap"><img src="images/icons/soil_medium.png" class="icon">soil</i> can be tilled using a <i class="nowrap"><img src="images/icons/hoe_iron.png" class="icon">hoe</i>. Higher quality <i>soil</i> results in more fertile <i class="nowrap"><img src="images/icons/farmland.png" class="icon">farmland</i>, which also determines the natural maximum amount of nutrients. For example, <i class="nowrap"><img src="images/icons/soil_terra_preta.png" class="icon">Terra Preta</i> will till into a <i>farmland</i> block with 80 nutrients for each nutrient type.
             </div>
             <div>
               Each <i>crop</i> requires wet <i>farmland</i> and one of 3 nutrients (N, P or K) to grow. <i class="nowrap"><img src="images/icons/water.png" class="icon">Water</i> can hydrate up to 3 blocks away from it.<span class="more">3</span> The <i>crop's</i> growth speed depends on how many nutrients of its required type are available in the ground. For example, when the nutrient levels are at N=65, P=45, K=15, <i class="nowrap"><img src="images/icons/vegetable_turnip.png" class="icon">turnips</i> will grow at 100% speed, <i class="nowrap"><img src="images/icons/vegetable_onion.png" class="icon">onions</i> at 90% and <i class="nowrap"><img src="images/icons/vegetable_carrot.png" class="icon">carrots</i> at 30%. 
